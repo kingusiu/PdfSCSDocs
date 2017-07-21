@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Meeting PDF SCS Progress</title>
+<meta name="author" content="(kinga)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Meeting PDF SCS Progress</h1><h2 class="author">kinga</h2><p class="date">Created: 2017-07-21 Fre 02:26</p>
+</section>
+<section>
+<section id="slide-org3856dc3">
+<h2 id="org3856dc3"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> GENERAL</h2>
+<div class="outline-text-2" id="text-1">
+</div></section>
+<section id="slide-orgd6ed3b9">
+<h3 id="orgd6ed3b9"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Set up Cppunit for TESTING</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd0ad1a9">
+<h2 id="orgd0ad1a9"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> Image Reconstruction</h2>
+<div class="outline-text-2" id="text-2">
+</div></section>
+<section id="slide-org7c7eadc">
+<h3 id="org7c7eadc"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Add Transfer Function</h3>
+<ul>
+<li>id() for simple reconstruction of unprocessed image</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbb709a1">
+<h2 id="orgbb709a1"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Gauss</h2>
+<div class="outline-text-2" id="text-3">
+</div></section>
+<section id="slide-org6021a09">
+<h3 id="org6021a09"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Debug Gauss padding</h3>
+</section>
+<section id="slide-orgb3e6917">
+<h3 id="orgb3e6917"><span class="section-number-3">3.2</span> <span class="todo TODO">TODO</span> How to represent spatial support?</h3>
+<ul>
+<li>n left/right around zero in each direction? (current solution)</li>
+<li>Interval of support? [-a,b]</li>
+
+</ul>
+</section>
+<section id="slide-org46303b2">
+<h3 id="org46303b2"><span class="section-number-3">3.3</span> <span class="todo TODO">TODO</span> Make Gauss SHIFTABLE</h3>
+<ul>
+<li>currently centered fixed around zero =&gt; has to be shiftable to a range value (grayscale [0,255])</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org95c0d79">
+<h2 id="org95c0d79"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> OPTIMIZATION</h2>
+<div class="outline-text-2" id="text-4">
+</div></section>
+<section id="slide-orgfaba006">
+<h3 id="orgfaba006"><span class="section-number-3">4.1</span> <span class="todo TODO">TODO</span> Represent Grayscale color as Byte</h3>
+<p>
+-&gt; Problem: messes up row-major format -&gt; implications for fftw3 which expects row-major?
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
