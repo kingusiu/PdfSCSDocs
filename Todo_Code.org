@@ -1,0 +1,23 @@
+#+TITLE: Meeting PDF SCS Progress
+
+#+OPTIONS: toc:nil
+* TODO GENERAL
+** TODO Set up Cppunit for TESTING
+** DONE Set up Doxygen for Documentation
+
+* TODO Image Reconstruction
+** TODO Add Transfer Function 
+   - id() for simple reconstruction of unprocessed image
+
+* TODO Gauss
+** DONE Debug Gauss padding
+** TODO How to represent spatial support?
+   - n left/right around zero in each direction? (current solution)
+   - Interval of support? [-a,b]
+** TODO Make Gauss SHIFTABLE
+   - currently centered fixed around zero => has to be shiftable to a range value (grayscale [0,255])
+
+* TODO OPTIMIZATION
+** TODO Represent Grayscale color as Byte
+   -> Problem: messes up row-major format -> implications for fftw3 which expects row-major?
+
