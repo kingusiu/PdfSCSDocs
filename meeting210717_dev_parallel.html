@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Meeting PDF SCS Questions</title>
+<meta name="author" content="(kinga)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Meeting PDF SCS Questions</h1><h2 class="author">kinga</h2><p class="date">Created: 2017-07-21 Fre 03:39</p>
+</section>
+
+<section>
+<section id="slide-org90b89c7">
+<h2 id="org90b89c7"><span class="section-number-2">1</span> Algo Questions</h2>
+<div class="outline-text-2" id="text-1">
+</div></section>
+<section id="slide-org24144c2">
+<h3 id="org24144c2"><span class="section-number-3">1.1</span> Parallelization</h3>
+<ul>
+<li>parallelizable through image slicing and joining only?</li>
+<li>L2 not parallelizable the same way?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8641532">
+<h2 id="org8641532"><span class="section-number-2">2</span> Dev Questions</h2>
+<div class="outline-text-2" id="text-2">
+</div></section>
+<section id="slide-orgd837ea6">
+<h3 id="orgd837ea6"><span class="section-number-3">2.1</span> Fourier Transform</h3>
+<ul>
+<li>way of vectorization (along width, height and range dimension) irrelevant?</li>
+<li>fftw3 lib discards redundant part of domain -&gt; size-problems?</li>
+<li>lib different functions for real and complex input -&gt; convertible?</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb3c9818">
+<h2 id="orgb3c9818"><span class="section-number-2">3</span> Test Questions</h2>
+<div class="outline-text-2" id="text-3">
+</div></section>
+<section id="slide-org6c9dcc7">
+<h3 id="org6c9dcc7"><span class="section-number-3">3.1</span> Gauss</h3>
+<ul>
+<li>Other way to test apart from sumsTo1 ?</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

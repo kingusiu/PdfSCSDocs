@@ -1,0 +1,16 @@
+
+* Algo Questions
+
+** Parallelization
+   - parallelizable through image slicing and joining only?
+   - L2 not parallelizable the same way?
+
+* Dev Questions
+
+** Fourier Transform
+   + way of vectorization (along width, height and range dimension) irrelevant?
+
+* Test Questions
+  
+** Gauss
+   - Other way to test apart from sumsTo1 ?

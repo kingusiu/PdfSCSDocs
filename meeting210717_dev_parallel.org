@@ -1,0 +1,20 @@
+#+TITLE: Meeting PDF SCS Questions
+#+OPTIONS: toc:nil
+
+* Algo Questions
+
+** Parallelization
+   - parallelizable through image slicing and joining only?
+   - L2 not parallelizable the same way?
+
+* Dev Questions
+
+** Fourier Transform
+   + way of vectorization (along width, height and range dimension) irrelevant?
+   + fftw3 lib discards redundant part of domain -> size-problems?
+   + lib different functions for real and complex input -> convertible?
+
+* Test Questions
+  
+** Gauss
+   - Other way to test apart from sumsTo1 ?
