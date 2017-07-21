@@ -1,7 +1,9 @@
 #+TITLE: Meeting PDF SCS Progress
 #+AUTHOR:
 #+OPTIONS: toc:nil
+
 * TODO GENERAL
+** TODO Set up Eigen for Sparse Matrix Representation
 ** TODO Set up Cppunit for TESTING
 ** DONE Set up Doxygen for Documentation
 
