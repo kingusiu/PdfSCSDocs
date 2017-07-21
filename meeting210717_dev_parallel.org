@@ -1,4 +1,5 @@
 #+TITLE: Meeting PDF SCS Questions
+#+AUTHOR:
 #+OPTIONS: toc:nil
 
 * Algo Questions
@@ -13,6 +14,10 @@
    + way of vectorization (along width, height and range dimension) irrelevant?
    + fftw3 lib discards redundant part of domain -> size-problems?
    + lib different functions for real and complex input -> convertible?
+
+** L2 System Solver
+   + d_i * d_i_conjugate -> flip imaginary sign for conjugate? (after Fourier Transform?)
+   + In Sherman Morrison: A == I ?
 
 * Test Questions
   
